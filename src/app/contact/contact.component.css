@@ -1,13 +1,24 @@
 .jumbotron{
-    background-color: black;
-    color: white;
+    background-color: rgb(139, 233, 236);
+    color: darkblue;
     width: 50%;
     height: fit-content;
     padding: 25px;
-    margin: 0 0 0 270px;
+    margin: 30px auto;
     border-radius: 14px;
+    position:relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;
 }
 .jumbotron h2{
-    color: blue;
+    color: darkblue;
     text-decoration: underline;
+}
+button{
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+}
+button:focus{
+    outline: none;
 }

@@ -1,17 +1,33 @@
 /* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
+
+.container{
+    display: flex;
+}
 .jumbotron{
-    background-color: black;
+    background-color: rgb(139, 233, 236);
     padding: 25px;
     border-radius: 14px;
     width: max-content;
     height: fit-content;
-    color: white;
+    color: darkblue;
     margin: 30px auto;
     align-items: center;
-    display: flex;
+    position:relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;    
+}
+button{
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: darkblue;
+    height: 40px;
+}
+button:focus{
+    outline: none;
 }
 .jumbotron h2{
-    color: blueviolet;
+    color: darkblue;
     text-decoration: underline;
 }
 .flex{

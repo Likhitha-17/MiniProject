@@ -1,43 +1,47 @@
-<div class="bg-image"></div>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <h1 style="padding-right:30px; color:wheat;">NewsBytes</h1>
-  <button class="navbar-toggler" type="button" style="float: right;" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <!-- <a class="navbar-brand" href="#"></a> -->
+<!-- <div class="bg-image"></div> -->
+<nav class="navbar navbar-expand-sm navbar-light ">
+  <div class="navbar-header" id="navbar">
+    <img src="assets/image/logo.png">
+    <button class="navbar-toggler" type="button" style="float:right;" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav mr-auto">
+      &nbsp;&nbsp;
       <li class="nav-item" *ngIf="ls.role==''">
-        <a class="nav-item nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="home"><strong>Home</strong></a>
+        <a class="nav-link"  routerLink="home"><strong>Home</strong></a>
       </li>
       <li class="nav-item" *ngIf="ls.loginStatus && ls.role!=''">
-        <a class="nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="readnow"><strong>ReadNow</strong></a>
+        <a class="nav-link"  routerLink="readnow"><strong>ReadNow</strong></a>
       </li>
       <li class="nav-item" *ngIf="ls.role=='admin'">
-        <a class="nav-item nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="/admindashboard"><strong>AdminDashboard</strong></a>
+        <a class=" nav-link"  routerLink="/admindashboard"><strong>AdminDashboard</strong></a>
       </li>
       <li class="nav-item" *ngIf="ls.role=='admin'">
-        <a class="nav-item nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="/usercontacted"><strong>User Contacts</strong></a>
+        <a class="nav-link"  routerLink="/usercontacted"><strong>User Contacts</strong></a>
       </li>
       <li class="nav-item" *ngIf="ls.role=='user'">
-        <a class="nav-item nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="/feedback"><strong>FeedBack</strong></a>
+        <a class="nav-link"  routerLink="/feedback"><strong>FeedBack</strong></a>
       </li>
       <li class="nav-item" *ngIf="ls.role=='user'">
-        <a class="nav-item nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="user/contact"><strong>Contact Us</strong></a>
+        <a class="nav-link"  routerLink="user/contact"><strong>Contact Us</strong></a>
       </li>
     </div>
     <div class="navbar-nav ml-auto">
       <li class="nav-item" *ngIf="ls.role=='' && !ls.loginStatus">
-        <a class="nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="login"><strong>Login</strong></a>
+        <a class="nav-link"  routerLink="login"><strong>Login</strong></a>
       </li>
       <li class="nav-item" *ngIf="ls.loginStatus && ls.role!=''">
-        <a class="nav-link" style="color: wheat; font-style: oblique; font-size: large;" routerLink="login"><strong>Logout</strong></a>
+        <a class="nav-link"  routerLink="login"><strong>Logout</strong></a>
       </li>
       <li class="nav-item" *ngIf="ls.role==''">
-        <a class="nav-item nav-link" style="color: wheat; font-style: oblique; font-size: large;"  routerLink="user/signup"><strong>Signup</strong></a>
+        <a class="nav-link"   routerLink="user/signup"><strong>Signup</strong></a>
       </li>
       
     </div>
   </div>
 </nav>
-<router-outlet></router-outlet>
+<div class="scroll">
+  <router-outlet></router-outlet>
+</div>

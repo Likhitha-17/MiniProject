@@ -1,4 +1,11 @@
 .jumbotron{
-    background-color:rgb(26, 26, 29);
-    color:white;
+    background-color:rgb(139, 233, 236);
+    color:darkblue;
+    margin: 30px auto;
+    position:relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;
+}
+h2{
+    color: darkblue;
 }

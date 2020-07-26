@@ -15,11 +15,14 @@ export class ArticlesComponent implements OnInit {
   dept:string;
 
   ngOnInit(): void {
-    console.log("This is articles",this.ds.category);
+    // console.log("This is articles",this.ds.category);
     this.dept=this.ds.category;
     //var value=givedata();
+    var colors:string[]; 
+    colors=["blue","yellow","green"];
+
     this.ds.getdata().subscribe((result)=>{
-      console.log(result["message"]);
+      // console.log(result["message"]);
       // this.headline=result["message"][0].news+" "+result["message"][0].url;
       // this.headline=result["message"][1].news+" "+result["message"][1].url;
       this.headline=result["message"];

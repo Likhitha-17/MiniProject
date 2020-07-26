@@ -20,7 +20,7 @@
                 <div class="flex">
                     <input [type]="show ? 'text' : 'password' " name="password" id="pw" class="form-control"  [(ngModel)]="model.password" 
                 required  (change)="validatePassword()" (click)="toggle()">
-                <button type="button" style="border: 0px;border-radius: 4px; outline-color: aliceblue;" (click)="toggle()">Show</button>
+                <button type="button"  (click)="toggle()">Show</button>
                 </div>
                 <span *ngIf="!model.isPasswordValid" style="color: red;padding-left: 1.75rem;">
                 Password should contain atleast 8 letters and atleast number</span>
@@ -47,7 +47,7 @@
             </div>
             <br>          
             <div class="text-center">
-                <button type="submit" class="btn btn-success" [disabled]="!model.isRegisterEnabled">Register</button>
+                <button type="submit" class="btn btn-primary" [disabled]="!model.isRegisterEnabled">Register</button>
             </div>
         </form>                   
     </div>

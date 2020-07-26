@@ -1,19 +1,31 @@
 .jumbotron{
-    
-    background-color: black;
-    margin: 0 0 0 290px;
+    background-color: rgb(139, 233, 236);
+    margin: 30px auto;
     width: 50%;
     height:300%;
+    color: darkblue;
     padding: 20px;
     border-radius: 14px;
+    position:relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;
 }
 .jumbotron h2{
-    color: blue;
+    color: darkblue;
     text-decoration: underline;
 }
-.jumbotron label,p{
+button{
+    border: 0px;
+    border-radius: 4px;
+    background-color: darkblue;
     color: white;
 }
+button:focus{
+    outline: none;
+}
+/* .jumbotron label,p{
+    color: white;
+} */
 .fa{
     color: white;
 }
@@ -33,7 +45,7 @@
     white-space:nowrap;
     cursor:pointer;
     font-size:30px;
-    color:#ccc;
+    color:white;
 }
 .rate:not(:checked) > label:before {
     content: '★ ';

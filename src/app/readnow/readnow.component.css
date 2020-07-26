@@ -45,7 +45,7 @@ z-index: -1;
   margin-left: 95px;
 }
 .a{
-  color: gray;
+  color: wheat;
 }
 .hexagon-inside{
   width: 100%;
@@ -78,12 +78,17 @@ z-index: -1;
 }
 .jumbotron{
     
-  background-color: black;
+  background-color: rgb(139, 233, 236);
   margin: 50px auto;
   width: 75%;
   height:300%;
   padding: 20px;
   border-radius: 14px;
+  margin: 30px auto;
+  color: darkblue;
+  position:relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;
 }
 /* .column {
     float: left;

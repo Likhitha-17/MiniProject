@@ -1,18 +1,21 @@
 .jumbotron{
     
-    background-color: black;
+    background-color: rgb(139, 233, 236);
     margin: 30px auto;
     width: fit-content;
     height: fit-content;
     padding: 20px;
     border-radius: 14px;
+    position:relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;
 }
 .jumbotron h2{
-    color: blueviolet;
+    color: darkblue;
     text-decoration: underline;
 }
 .jumbotron label,p{
-    color: white;
+    color: darkblue;
 }
 .flex{
     display: flex;
@@ -23,5 +26,15 @@
     border: 0px;
     border-radius: 14px;
     height: 100%;
+    outline: none;
+}
+button{
+    outline: none;
+    border: 0px;
+    border-radius: 4px; 
+    background-color: darkblue;
+    color: white;
+}
+button:focus{
     outline: none;
 }

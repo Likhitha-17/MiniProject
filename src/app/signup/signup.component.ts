@@ -1,13 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { RegisterService } from '../register.service';
 import { NgForm } from '@angular/forms';
-
+// import { trigger, state, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css']
+  styleUrls: ['./signup.component.css'],
+//   animations:[ 
+//     trigger('fade',
+//     [ 
+//       state('void', style({ opacity : 0})),
+//       transition(':enter',[ animate(300)]),
+//       transition(':leave',[ animate(500)]),
+//     ]
+// )]
 })
 export class SignupComponent implements OnInit {
 
@@ -38,6 +46,18 @@ export class SignupComponent implements OnInit {
     ngOnInit(): void {
       this.show=true;
     }
+
+  //   @HostListener('window:scroll', ['$event'])
+  // onWindowScroll(e) {
+  //    if (window.pageYOffset > 550) {
+  //      let element = document.getElementById('navbar');
+  //      element.classList.add('nav-header');
+  //    } else {
+  //     let element = document.getElementById('navbar');
+  //       element.classList.remove('nav-header'); 
+  //    }
+  // }
+
     isUserNamePopulated() {
       const parent = this;
       if (parent.model.username.length < parent.usernameLength) {
